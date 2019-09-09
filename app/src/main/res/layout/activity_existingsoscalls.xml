@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.john.medic.existingsoscalls">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/helpneed"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call patient"
+        android:background="#00FF00"
+        android:id="@+id/bt5"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS patient"
+        android:background="#0000ff"
+        android:id="@+id/bt6"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view location"
+        android:background="#ffffff"
+        android:id="@+id/bt7"
+        android:layout_gravity="bottom"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:text="name"
+            android:id="@+id/bt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="number"
+            android:id="@+id/bt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="lat"
+            android:id="@+id/bt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="long"
+            android:id="@+id/bt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

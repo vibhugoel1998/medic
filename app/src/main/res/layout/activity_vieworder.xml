@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.john.medic.vieworder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:text="cancel order"
+        android:id="@+id/btcancelorder"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:id="@+id/btcc"
+        android:background="#00FF00"
+        android:layout_height="match_parent"
+        android:text="contact customer care"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/hd_tvbill"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOTAL AMOUNT :0.0"/>
+
+    <ListView
+        tools:listitem="@layout/vieworder_list_item"
+        android:id="@+id/lvhddetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
